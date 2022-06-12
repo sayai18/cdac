@@ -1,0 +1,24 @@
+Association (HAS-A)
+
+Association is relationship between two separate classs, using object references.
+Represents HAS-A
+why code reusability
+
+Association can be one-to-one,one -to-many, many-to.one,many-to-many.
+
+Composition and Aggreagation are two forms of association
+
+Aggregation implies a has a relationship where a child can exost independently of the parent
+
+eg: Class & Student/Bank has a customer
+
+Composition (Part of or belongs to)
+pet has a tail
+It implies a relationship where the child cannot exist independen of the parent
+eg- Human has a lungs /car has a engine
+(when parent is deleted, typically child cant exist on its own)
+
+
+Aggregation is a weaker form of has a relationship than composition
+
+
