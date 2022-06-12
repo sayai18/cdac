@@ -1,0 +1,48 @@
+Race condition 
+
+The situation where two or more threads compete for the same resource, where the sequence in which the resurce is accessed is significant, is called race condition.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Critical section
+
+A code section that leads to race condition is called critical section 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+preventing race conditions
+
+To prevent race condition from occuring you must make sure that the critical section is executed as an atomic instruction. That means once a single thread is executing it, no other threads can execute it until the first thread has left the critical section
+
+for eg if there is a banking system and there are two people one is depositing and other is withdrawing and total balance is 1000 and both or then w/d 500 and deposite 500 at the same time these are handles by two diff threads it will be a problem because two thread are trying to chnage the state of particular object atthe same time
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Synchronization-
+
+applying thread safety or applying lock also called as intrinsic loc or monitor lock
+-------------------------------------
+when is it required?
+
+Its required if multifle threads are sharing the same resource (collections, data file ,db table)
+------------------------------------------
+how?
+
+keyword --> synchorized (a lock is applied at the object level)
+
+to avoid race condition, synchronization is required
+-------------------------------------------
+Synchronized method
+
+A method with sync keyword allows only one thread at a time to let its task complete
+
+a thread that comes first would take the lock and perform its times meanwhile other thread would wait for the first to complete the task
+
+synchronized block
+
+A block with sync keyword allows only one thread at a time to let its task complete
+
+it follows the same concept as a sync method but it has limited scope as compared to method
+
+the block is followed with an argument wrapping ref of an object.
+
+it comes handy when less number of stmts require to be synchronized.
+S
+ 
+
+  
